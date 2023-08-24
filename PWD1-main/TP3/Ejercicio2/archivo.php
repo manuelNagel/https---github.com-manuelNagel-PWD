@@ -1,38 +1,36 @@
 <?php
 
-if(isset($_POST)){
-    
-    $dir = './Archivos/';
+if (isset($_POST)) {
+
+    $dir = '../Archivos/';
 
     if ($_FILES['formFile']["error"] <= 0) {
-        
-        
+
         // Intentamos copiar el archivo al servidor.
-       if (!copy($_FILES['formFile']["tmp_name"], $dir.$_FILES['formFile']['name'])) {
-        echo "ERROR: no se pudo cargar el archivo ";
-       }else{
-        echo "El archivo ".$_FILES['formFile']["name"]." se ha copiado con Éxito <br />";
-        $nombreFichero =$_FILES['formFile']["name"];
-        $contenido = leerFicheroCompleto($nombreFichero);
-       }
-    }else{
+        if (!copy($_FILES['formFile']["tmp_name"], $_FILES['formFile']['name'])) {
+            echo "ERROR: no se pudo cargar el archivo ";
+        } else {
+            echo "El archivo " . $dir . $_FILES['formFile']["name"] . " se ha copiado con Éxito <br />";
+            $nombreFichero = $_FILES['formFile']["name"];
+            $contenido = leerFicheroCompleto($nombreFichero);
+        }
+    } else {
         echo "ERROR: no se pudo cargar el archivo. No se pudo acceder al archivo Temporal";
     }
 
-    
 } else {
     echo "No se recibieron datos <br />";
     echo "<form action=prueba.html method=''><input type='submit' value='Regresar'></form>";
 }
 
+function leerFicheroCompleto($nombre_fichero)
+{
 
-function leerFicheroCompleto($nombre_fichero){
-   
-   $fichero_texto = fopen("./Archivos/".$nombre_fichero, "r");
-   
-   $contenido_fichero = fread($fichero_texto, filesize("./Archivos/".$nombre_fichero));
+    $fichero_texto = fopen("./" . $nombre_fichero, "r");
 
-   return $contenido_fichero;
+    $contenido_fichero = fread($fichero_texto, filesize("./" . $nombre_fichero));
+
+    return $contenido_fichero;
 }
 
 ?>
