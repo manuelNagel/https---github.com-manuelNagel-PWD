@@ -1,5 +1,5 @@
 <?php
-
+include_once '../Control/control.php';
 //Verificacion si el GET recibio algo
 if ($_GET){
     $titulo = $_GET['titulo'];
@@ -13,9 +13,6 @@ if ($_GET){
     $genero = $_GET['genero'];
     $sinopsis = $_GET['sinopsis'];
 
-} else {
-    echo "No se recibieron datos <br />";
-    echo "<form action=index.html method=''><input type='submit' value='Regresar'></form>";
 }
 
 ?>
@@ -36,7 +33,7 @@ if ($_GET){
             <b class="text-success">Genero: </b><?php echo $genero ?><br>
             <b class="text-success">Sinopsis: </b><?php echo $sinopsis ?><br>
         </div>
-        <form action=index.html method=''><input type='submit' value='Regresar' class="btn btn-primary"></form>
+        <form action="index.php" method=''><input type='submit' value='Regresar' class="btn btn-primary"></form>
 
     </div>
 </html>

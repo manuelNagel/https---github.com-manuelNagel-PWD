@@ -14,7 +14,7 @@
   <div class="container p-3">
     <div class="border bg-light border-3 rounded p-2 mt-3 mb-4">
       <h3>Ejercicio 2</h3>
-      <form method="get" action="horasxsemana.php" id="form2">
+      <form method="get" action="accion.php" id="form2">
         <div class="row mb-3">
           <div class="col">
             <label for="lunes" class="form-label">Horas Cursadas Lunes: </label>
@@ -77,7 +77,7 @@
       </form>
     </div>
   </div>
-  <form action="../../index.html" class="m-4">
+  <form action="../../../index.html" class="m-4">
     <input class="btn btn-primary" type="submit" value="Inicio" />
   </form>
 </body>
