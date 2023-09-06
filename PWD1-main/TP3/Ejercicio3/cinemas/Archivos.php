@@ -144,7 +144,7 @@ class Archivo{
 
    public function __toString()
    {
-    return $this->GenerarRuta('image/');
+    return $this->GenerarRuta('../vistas/image/');
    }
 }
 ?>
