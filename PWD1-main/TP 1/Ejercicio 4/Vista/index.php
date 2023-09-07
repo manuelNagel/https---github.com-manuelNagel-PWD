@@ -67,7 +67,7 @@
       </form>
     </div>
   </div>
-  <form action="../../index.html" class="m-4">
+  <form action="../../../index.html" class="m-4">
     <input class="btn btn-primary" type="submit" value="Inicio" />
   </form>
 </body>
