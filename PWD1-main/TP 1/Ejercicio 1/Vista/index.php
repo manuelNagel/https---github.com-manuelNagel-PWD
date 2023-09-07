@@ -14,7 +14,7 @@
   <div class="container p-3">
     <div class="border bg-light border-3 rounded p-2 mt-3 mb-4">
       <h3>Ejercicio 1</h3>
-      <form method="post" action="vernumero.php" id="form1">
+      <form method="post" action="accion.php" id="form1">
         <label for="number" class="form-label">Ingrese un número:</label>
         <input
           type="number"
@@ -26,7 +26,7 @@
       </form>
     </div>
   </div>
-  <form action="../../index.html" class="m-4">
+  <form action="../../../index.html" class="m-4">
     <input class="btn btn-primary" type="submit" value="Inicio" />
   </form>
 </body>
