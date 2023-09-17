@@ -1,6 +1,4 @@
 <?php
-// require_once(__DIR__ . '/conector/BaseDatos.php');
-// include_once 'Persona.php';
 class Auto
 {
     private $patente;
