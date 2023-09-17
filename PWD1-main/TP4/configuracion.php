@@ -5,7 +5,7 @@ header("Cache-Control: no-cache, must-revalidate ");
 // CONFIGURACION APP//
 /////////////////////////////
 
-$PROYECTO = 'WEB_DINAMICA/https---github.com-manuelNagel-PWD/PWD1-main/TP4';
+$PROYECTO = 'https---github.com-manuelNagel-PWD/PWD1-main/TP4';
 
 //variable que almacena el directorio del proyecto
 $ROOT = $_SERVER['DOCUMENT_ROOT'] . "/$PROYECTO/";
